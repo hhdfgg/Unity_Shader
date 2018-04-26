@@ -112,4 +112,4 @@ Tags {
 		}
 ```
 
-[両面描画の解説](../Both Sides Drawing.md)
+[両面描画の解説](Both Sides Drawing.md)
