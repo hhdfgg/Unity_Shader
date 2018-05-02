@@ -17,7 +17,7 @@
 					}
 					else
 					{
-						tex2D(_MainTex, i.uv);
+						tex2D(_MainTex2, i.uv);
 					}
 					を略した書き方が
 					return (facing > 0 ) ? tex2D(_MainTex,i.uv) : tex2D(_MainTex2,i.uv);
@@ -54,7 +54,7 @@ Shader "Unlit/NewUnlitShader"
 		LOD 100
 		
 		// ここ重要！
-		// Call off を指定してカリングをしないように設定する
+		// Cull off を指定してカリングをしないように設定する
 		// カリング = 描画する必要がないポリゴンを描画しないようにすること
 		/* 
 			オクルージョンカリング = 
