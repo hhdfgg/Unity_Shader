@@ -6,7 +6,6 @@
 # スクリプトの一部解説
 
 ```cs
-			// fixed facing : VFACE が引数の型定義 fixedは分かるが facing : VFACE と　）: SV_Target　は分からない
 			fixed4 frag(v2f i, fixed facing : VFACE) : SV_Target
 			{
 				return (facing > 0 ) ? tex2D(_MainTex,i.uv) : tex2D(_MainTex2,i.uv);
@@ -101,7 +100,7 @@ Shader "Unlit/NewUnlitShader"
 				return o;
 			}
 			
-			// fixed facing : VFACE が引数の型定義 fixedは分かるが facing : VFACE と　）: SV_Target　は分からない
+			
 			fixed4 frag(v2f i, fixed facing : VFACE) : SV_Target
 			{
 				return (facing > 0 ) ? tex2D(_MainTex,i.uv) : tex2D(_MainTex2,i.uv);
