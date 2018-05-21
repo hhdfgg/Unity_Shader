@@ -54,7 +54,7 @@
  ### スクリプト全体
  
  ```cs
- Shader "Custom/Textest" {
+ Shader "Custom/TexTest" {
 	Properties {
 		_MainTex ("MainTex", 2D) = "white" {}
 		_Tex2("Tex2",2D)  = "white"{}
@@ -136,7 +136,7 @@
 ### スクリプト全体
   
   ```cs
-  Shader "Custom/Textest" {
+  Shader "Custom/TexTest" {
 	Properties {
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex ("MainTex", 2D) = "white" {}
