@@ -124,7 +124,7 @@
  ```
  
 
-  ### void surf
+### void surf
   
   ```cs
   		fixed4 c1 = tex2D (_MainTex, IN.uv_MainTex) * _Color;
@@ -132,8 +132,8 @@
 			o.Albedo = c1.rgb * c2.rgb;
   ```
   
-  
-  ### スクリプト全体
+  
+### スクリプト全体
   
   ```cs
   Shader "Custom/Textest" {
