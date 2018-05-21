@@ -6,7 +6,6 @@
  1. プロジェクトビューで"create"->"Material"を生成、名前は"TexTest"
  1. プロジェクトビューで"create"->"Shader"->"StanderdSurfaceShader"を生成、名前は"TexTest"
  1. マテリアルにシェーダーを割り当てたあとに、Quad(Textest)にマテリアルを割り当てる
- 
  ※割り当てる = ドラック&ドロップ
  1. ２枚以上の異なるテクスチャをUnityにインポート
  
