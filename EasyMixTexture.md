@@ -28,23 +28,23 @@
     // プロパティで受け取ったデータをシェーダ内で使うための定義
     // テクスチャはsampler2D型
     // sampler2D型の_MainTexと_Tex2を定義する
-  	sampler2D _MainTex;
-  	sampler2D _Tex2;
+    sampler2D _MainTex;
+    sampler2D _Tex2;
  ```
  
  ### void surf
  
  ```cs
- 		void surf (Input IN, inout SurfaceOutputStandard o) {
+      void surf (Input IN, inout SurfaceOutputStandard o) {
       // tex2D関数:tex2D (サンプラー ステート, テクスチャー座標);
       // UV座標（uv_MainTex）からテクスチャ（_MainTex）上のピクセルの色を計算して返す関数
       // c1がMainTex、c2がTex2
-			fixed4 c1 = tex2D (_MainTex, IN.uv_MainTex);
-			fixed4 c2 = tex2D(_Tex2, IN.uv_MainTex);
+      fixed4 c1 = tex2D (_MainTex, IN.uv_MainTex);
+      fixed4 c2 = tex2D(_Tex2, IN.uv_MainTex);
       // アルベドにc1のRGBとc2のRGBを掛ける
       // "+" "-" "*" "/" に変えてみて自分が好きな色に変えることが出来る
-			o.Albedo = c1.rgb * c2.rgb;
-		}
+      o.Albedo = c1.rgb * c2.rgb;
+	}
  ```
  
  
@@ -110,27 +110,27 @@
 ### Properties
 
 ```cs
-		_Color("Color", Color) = (1,1,1,1)
-		_MainTex ("MainTex", 2D) = "white" {}
-		_Tex2("Tex2",2D)  = "white"{}
+	_Color("Color", Color) = (1,1,1,1)
+	_MainTex ("MainTex", 2D) = "white" {}
+	_Tex2("Tex2",2D)  = "white"{}
 ```
 
 
  ### SubShaderの"#pragma target 3.0"の下に
  
  ```cs
- 		sampler2D _MainTex;
-		sampler2D _Tex2;
-		fixed4 _Color;
+ 	sampler2D _MainTex;
+	sampler2D _Tex2;
+	fixed4 _Color;
  ```
  
 
 ### void surf
   
   ```cs
-  		fixed4 c1 = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-			fixed4 c2 = tex2D(_Tex2, IN.uv_MainTex);
-			o.Albedo = c1.rgb * c2.rgb;
+  	fixed4 c1 = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+	fixed4 c2 = tex2D(_Tex2, IN.uv_MainTex);
+	o.Albedo = c1.rgb * c2.rgb;
   ```
   
   
