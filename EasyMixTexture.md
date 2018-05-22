@@ -2,9 +2,9 @@
 簡単なシェーダーを書いて、２枚のテクスチャをブレンドする方法を紹介します。
 
 ## 準備
- 1. ヒエラルキービューで"create"->"3DObject"->"Quad"を生成、名前は"TexTest"としておきます。
- 1. プロジェクトビューで"create"->"Material"を生成、名前は"TexTest"
- 1. プロジェクトビューで"create"->"Shader"->"StanderdSurfaceShader"を生成、名前は"TexTest"
+ 1. ヒエラルキービューで<b>"create"->"3DObject"->"Quad"</b>を生成、名前は<b>"TexTest"</b>としておきます。
+ 1. プロジェクトビューで<b>"create"->"Material"</b>を生成、名前は<b>"TexTest"</b>
+ 1. プロジェクトビューで<b>"create"->"Shader"->"StanderdSurfaceShader"</b>を生成、名前は<b>"TexTest"</b>
  1. マテリアルにシェーダーを割り当てたあとに、Quad(Textest)にマテリアルを割り当てる<br>
  ※割り当てる = ドラック&ドロップ
  1. ２枚以上の異なるテクスチャをUnityにインポート
