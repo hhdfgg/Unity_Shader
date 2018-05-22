@@ -44,7 +44,7 @@
       // アルベドにc1のRGBとc2のRGBを掛ける
       // "+" "-" "*" "/" に変えてみて自分が好きな色に変えることが出来る
       o.Albedo = c1.rgb * c2.rgb;
-	}
+	 }
  ```
  
  
@@ -119,7 +119,7 @@
  ### SubShaderの"#pragma target 3.0"の下に
  
  ```cs
- 	sampler2D _MainTex;
+	sampler2D _MainTex;
 	sampler2D _Tex2;
 	fixed4 _Color;
  ```
@@ -128,7 +128,7 @@
 ### void surf
   
   ```cs
-  	fixed4 c1 = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+	fixed4 c1 = tex2D (_MainTex, IN.uv_MainTex) * _Color;
 	fixed4 c2 = tex2D(_Tex2, IN.uv_MainTex);
 	o.Albedo = c1.rgb * c2.rgb;
   ```
