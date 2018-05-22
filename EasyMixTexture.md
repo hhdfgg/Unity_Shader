@@ -1,6 +1,6 @@
 # 簡単に２枚のテクスチャをブレンドする方法
 簡単なシェーダーを書いて、２枚のテクスチャをブレンドする方法を紹介します。
- - [サンプルデータ](https://github.com/hhdfgg/Unity_Shader/UnityPackage/TexTest.unitypackage?raw=true)
+ - [サンプルデータ](https://github.com/hhdfgg/Unity_Shader/UnityPackage/TexTest.unitypackage)
 
 ## 準備
  1. ヒエラルキービューで<b>"create"->"3DObject"->"Quad"</b>を生成、名前は<b>"TexTest"</b>としておきます。
