@@ -117,4 +117,4 @@ Tags {
 			o.Alpha = c.a;
 		}
 ```
-[両面描画の解説](Both_Sides_Drawing.md)
+[両面描画の解説](Both_Sides_Drawing.md) | [目次](README.md)
