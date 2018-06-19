@@ -1,7 +1,8 @@
 # 目次
 - [両面描画の解説](Both_Sides_Drawing.md)
-- [簡単に２枚のテクスチャをブレンドする方法](EasyMixTexture.md)
 - [普段のスクリプトで呼び出すには](01_EX.md)
+- [簡単に２枚のテクスチャをブレンドする方法](EasyMixTexture.md)
+
 
 # Unity_Shader
 
